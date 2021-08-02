@@ -2,9 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ msphan-cuda-11.2 ]
+    branches: [ master ]
   pull_request:
-    branches: [ msphan-cuda-11.2 ]
+    branches: [ master ]
 
 jobs:
 
