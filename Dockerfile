@@ -12,8 +12,8 @@ RUN mkdir /opt/cmake && cd /opt/cmake && \
     ln -s /opt/cmake/bin/cmake /usr/local/bin/cmake && \
     rm cmake-3.12.4-Linux-x86_64.sh && \
     cmake --version
-RUN git clone https://bitbucket.org/fernandoamat/tgmm-paper.git tgmm-paper/
-# COPY tgmm-paper/ tgmm-paper/
+# RUN git clone https://bitbucket.org/fernandoamat/tgmm-paper.git tgmm-paper/
+COPY tgmm-paper/ tgmm-paper/
 RUN cd tgmm-paper && \
     mkdir build && \
     cd build && \
